@@ -11,7 +11,6 @@ import plotly.express as px
 
 st.set_page_config(page_title="Data Science - Análise de Documentos", layout="wide")
 
-st.image("assets/logo.png", width=120)
 st.title("Navegação Inteligente de Documentos")
 st.markdown("Sejam Bem Vindos!!!""---""Este app demonstra como usar embeddings e aprendizado de máquina para clusterizar, classificar e buscar documentos de forma inteligente.")
 
