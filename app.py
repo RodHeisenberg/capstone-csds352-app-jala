@@ -18,7 +18,7 @@ st.markdown("**Sejam Bem Vindos!!! ** Este app demonstra como usar embeddings e 
 modelo = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Upload
-docs = st.file_uploader("📄 Faça upload de arquivos .txt", type="txt", accept_multiple_files=True)
+docs = st.file_uploader("Faça upload de arquivos .txt", type="txt", accept_multiple_files=True)
 
 if docs:
     textos = []
@@ -56,7 +56,7 @@ if docs:
         df["Qualidade"] = np.where(df["Cluster"] == 0, "Alta", "Baixa")
 
         # Visualização
-        st.subheader("📊 Visualização Interativa dos Clusters")
+        st.subheader("Visualização Interativa dos Clusters")
         fig = px.scatter(df, x="x", y="y", color="Cluster", symbol="Anomalia",
                          hover_data=["Documento", "Qualidade"], width=900, height=500)
         st.plotly_chart(fig)
