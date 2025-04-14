@@ -12,7 +12,7 @@ import plotly.express as px
 st.set_page_config(page_title="Capstone - Análise de Documentos", layout="wide")
 
 st.image("assets/logo.png", width=120)
-st.title("🚀 Capstone - Navegação Inteligente de Documentos")
+st.title("Capstone - Navegação Inteligente de Documentos")
 st.markdown("**Bem-vindo, alunos do CSDS-352!** Este app demonstra como usar embeddings e aprendizado de máquina para clusterizar, classificar e buscar documentos de forma inteligente.")
 
 modelo = SentenceTransformer('all-MiniLM-L6-v2')
