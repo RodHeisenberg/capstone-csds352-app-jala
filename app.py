@@ -12,8 +12,8 @@ import plotly.express as px
 st.set_page_config(page_title="Capstone - Análise de Documentos", layout="wide")
 
 st.image("assets/logo.png", width=120)
-st.title("Capstone - Navegação Inteligente de Documentos")
-st.markdown("**Bem-vindo, alunos do CSDS-352!** Este app demonstra como usar embeddings e aprendizado de máquina para clusterizar, classificar e buscar documentos de forma inteligente.")
+st.title("Navegação Inteligente de Documentos")
+st.markdown("**Sejam Bem Vindos!!! ** Este app demonstra como usar embeddings e aprendizado de máquina para clusterizar, classificar e buscar documentos de forma inteligente.")
 
 modelo = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -71,4 +71,4 @@ if docs:
             st.success(f"Documento mais relevante: **{df.iloc[idx]['Documento']}**")
             st.code(df.iloc[idx]['Texto'][:1000])
     else:
-        st.warning("⚠️ É necessário fazer upload de pelo menos 3 arquivos para executar o KMeans.")
+        st.warning("É necessário fazer upload de pelo menos 3 arquivos para executar o KMeans.")
